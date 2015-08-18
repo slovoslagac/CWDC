@@ -10,37 +10,83 @@
         body {
             margin: 0;
             font-family: Arial,Helmet,Freesans,Helvetica;
+            
         }
         #topbar {
             background-color: #FFFFFF;
             width: 100%;
-            height: 45px;
+            height: 40px;
             color:black;
         }
+        
+        .fixedwidth {
+            width: 1150px;
+            margin: 0 auto;
+            
+            
+        }
+        
         #logodiv {
-            padding-top: 5px;
+            padding-top: 7px;
+            padding-bottom: 6px;
             float: left;
             border-right: 1px solid #E4E4E4;
-            padding-right: 15px;
+            padding-right: 10px;
+            
         }
+        
+        
+        
         #singindiv {
-            width: 200px;
             font-weight: bold;
             font-size: 0.9em;
+            padding: 4px 80px 11px 20px;
             border-right: 1px solid #E4E4E4;
+            float: left;
         }
         
         #singindiv img {
             position: relative;
             top: 3px;
         }
-        #singindiv p {
-            padding-left:  20px;
-        }
-        .fixedwidth {
-            width: 1250px;
-            margin: 0 auto;
+        
+        #topmenudiv {
+            float: left;
             
+            
+        }
+        
+        #topmenudiv ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #topmenudiv li {
+            list-style: none;
+            padding: 10px 20px 12px 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+            border-right: 1px solid #E4E4E4;
+            height: 100%;
+            float: left;
+            
+        }
+        
+        #searchdiv {
+            float: left;
+            padding: 5px 5px 5px 10px;
+        }
+        
+        #searchdiv input {
+            height: 25px;
+            border: none;
+            background-color: #E4E4E4;
+            font-size: 0.9em;
+            padding-left: 10px;
+            font-weight: bold;
+            background-image: url(images/magnify.PNG);
+            background-repeat: no-repeat;
+            background-position: right center;
         }
   
     </style>
@@ -54,7 +100,21 @@
                     <img src="images/BBClogo.PNG" />
                 </div>
                 <div id="singindiv">
-                    <p><img src="images/BBCsingin.PNG" /> Sing in</p>
+                    <img src="images/BBCsingin.PNG" /> Sing in
+                </div>
+                <div id="topmenudiv">
+                    <ul>
+                        <li>News</li>
+                        <li>Sport</li>
+                        <li>Weather</li>
+                        <li>iPlayer</li>
+                        <li>TV</li>
+                        <li>Radio</li>
+                        <li>More...</li>
+                    </ul>
+                </div>
+                <div id="searchdiv">
+                    <input type="text" placeholder="Search"/>
                 </div>
             </div>
         </div>
