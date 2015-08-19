@@ -88,7 +88,107 @@
             background-repeat: no-repeat;
             background-position: right center;
         }
-  
+        
+        .break {
+            clear: both;
+            
+        }
+        
+        #newsbar {
+            background-color: #BB1919;
+            width: 100%;
+            height: 80px;
+            color: white;
+            padding-bottom: 0;
+        }
+        
+        #newsbar p {
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            float: left;
+        }
+        
+        #newsheader {
+            font-size: 3em;
+            font-weight: bold;
+            
+        }
+        
+        #uk{
+            font-size: 0.6em;
+            margin-left: 14px;
+        }
+        #rssdiv {
+            float: right;
+            margin: 50px 98px 10px 0;
+            font-weight: bold;
+        }
+        
+        #rssdiv img {
+            height: 14px;
+            padding-top: 4px;
+        }
+        
+        #downbar {
+            background-color: #A91717;
+            width: 100%;
+            height: 40px;
+            color: white;
+            margin-left: -10px;
+            padding-right: 10px;
+        }
+        
+        #topicmenu {
+
+        }
+        
+        #topicmenu ul {
+            margin: 0;
+            padding: 0;
+            padding: 10px 0 10px 0;
+        }
+        
+        #topicmenu li {
+            list-style: none;
+            float: left;
+            padding: 0 20px 0 10px;            
+            border-right: 1px solid #BB1919;
+        }
+        
+        .selected {
+            
+        }
+        
+        #content {
+            width: 100%;
+            color: black;
+            padding-bottom: 0;
+            font-size: 0.75em;
+        }
+        
+        .date{
+            font-weight: bold;
+        }
+        
+        h1 {
+            padding-top: 0;
+            font-size: 3em;
+            
+        }
+        
+        .headlineimage {
+            float: left;
+            width: 450px;
+        }
+        
+        .newsitem {
+            position: relative;
+            margin-right:  10px;
+            width: 150px;
+            float: left;
+        }
+                
     </style>
     
 </head>
@@ -117,8 +217,60 @@
                     <input type="text" placeholder="Search"/>
                 </div>
             </div>
+        </div> <!-- topbar -->
+       
+        
+        <div class="break"></div>
+        
+        <div id="newsbar">
+            <div class="fixedwidth">
+                <p id="newsheader">NEWS<span id="uk">UK</span></p>
+                <div id="rssdiv">
+                    RSS <img src="images/rss.png" />                    
+                </div>
+            </div>
+        </div> <!-- neswbar --> 
+        
+        
+        
+        <div id="downbar">
+            <div class="fixedwidth">
+                <div id="topicmenu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Video</li>
+                        <li>World</li>
+                        <li>UK</li>
+                        <li>Business</li>
+                        <li>Tech</li>
+                        <li>Science</li>
+                        <li>Magazine</li>
+                        <li>Entertainment & Arts</li>
+                        <li>Health</li>
+                        <li>In Pictures</li>
+                        <li style="border-right:none">More...</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- downbar -->
+        
+        <div class="break"></div>
+        
+        <div id="content">
+            <div class="fixedwidth">
+                <p><span class="date">25 March 2014</span> Last updated at 09:13</p>
+                <h1>Bangkok bomber 'is part of network'</h1>
+                <div class="newsitem">
+                    <p>The bomb attack that killed 20 people at Bangkok's Erawan shrine on Monday was carried out by a "network", Thailand's chief of police has said.</p>
+                
+                </div>
+                
+                <img class="headlineimage" src="images/BBCHeadlineimage.PNG" />
+                
+            </div>
         </div>
-    </div>
+        
+    </div> <!-- container -->
 
     
 </body>
