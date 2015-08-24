@@ -167,30 +167,56 @@
             font-size: 0.75em;
         }
         
+        # content a{
+            color: #1F4F82;
+            text-decoration: none;
+        }
+        
+        
+        
         .date{
             font-weight: bold;
         }
         
         h1 {
             padding-top: 0;
-            font-size: 3em;
+            font-size: 2.5em;
             
         }
         
         .headlineimage {
             float: left;
-            width: 450px;
+            width: 420px;
         }
         
         .newsitem {
             position: relative;
             margin-right:  30px;
-            width: 200px;
+            width: 280px;
             float: left;
+            top: -10px;
+            font-size: 1.3em;
         }
         
+        .newsitem a {
+            color: #1F4F82;
+            text-decoration: none;
+        }
         
-                
+        .newsitem a:hover {
+            text-decoration: underline;
+        }
+        
+        .video {
+            background-image: url(images/triangle.PNG);
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 20px;
+        }
+          
+        .links {
+            line-height: 1.7em;
+        }
     </style>
     
 </head>
@@ -261,11 +287,13 @@
         <div id="content">
             <div class="fixedwidth">
                 <p><span class="date">21 August 2015</span> Last updated at 11:18</p>
-                <h1>Corbyn pledges Labour apology on Iraq</h1>
+                <a href="http://www.bbc.com/news/uk-34044383"><h1>New restrictions placed on air shows</h1></a>
                 <div class="newsitem">
-                    <p>Jeremy Corbyn has said he will formally apologise on behalf of the Labour Party for taking the country to war with Iraq if elected leader.</p>
-                    <p>Mr Corbyn told the Guardian the party would "never again flout the United Nations and international law".</p>
-                
+                    <p>Civil Aviation Authority announces "significant restrictions" on vintage jets in air displays after the Shoreham Airshow crash, which killed at least 11 people.</p>
+                    <p class="links"><a class="video" href="http://www.bbc.com/news/uk-34033660">Who were the Shoreham victims?</a><br />
+                    <a class="video" href="http://www.bbc.com/news/uk-34039474">Shoreham air crash: In pictures</a><br />
+                    <a class="video" href="http://www.bbc.com/news/uk-34032152">'Like a bomb exploding'</a><br />
+                    <a href="http://www.bbc.com/news/uk-34034785">Crash team-mates' death 'devastating'</a></p>
                 </div>
                 
                 <img class="headlineimage" src="images/BBCHeadlineimage.PNG" />
