@@ -186,13 +186,13 @@
         
         .headlineimage {
             float: left;
-            width: 420px;
+            width: 350px;
         }
         
         .newsitem {
             position: relative;
-            margin-right:  30px;
-            width: 280px;
+            margin-right:  20px;
+            width: 270px;
             float: left;
             top: -10px;
             font-size: 1.3em;
@@ -200,9 +200,11 @@
         
         .newsitem a {
             color: #1F4F82;
+        }
+
+        a {
             text-decoration: none;
         }
-        
         .newsitem a:hover {
             text-decoration: underline;
         }
@@ -221,10 +223,10 @@
         #watchlisten {
             background-color: #EEEEEE;
             float: right;
-            width: 350px;
-            height: 300px;
+            width: 500px;
             position: relative;
             top: -50px;
+            padding-bottom: 0px;
         }
         
         h2 {
@@ -236,6 +238,26 @@
         .boxes {
             float: right;
             margin: 20px 10px;
+            
+        }
+        .leftarrow {
+            float: left;
+            border-right: 1px white solid;
+        }
+        .wlblock{
+            float: left;
+            background-color: #D1700E;
+            width: 194px;
+        }
+        
+        .wlblock a {
+            color: white;
+        }
+        
+        .wlblock p {
+            margin: 12px 10px 13px 10px;
+        }
+        .wlblock img {
             
         }
     </style>
@@ -322,7 +344,12 @@
                 <div id="watchlisten">
                     <img class="boxes" src="images/boxes.PNG" />
                     <h2>Watch/Listen</h2>
+                    <img src="images/left.PNG" class="leftarrow" />
+                    <div class="wlblock">
+                        <img src="images/left%20pic.PNG" />
+                        <p><a href="">Titanic letter could fetch $100.000</a></p>
                     
+                    </div>
                 </div>
                      
             </div>
