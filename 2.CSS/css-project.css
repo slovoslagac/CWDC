@@ -1,0 +1,280 @@
+body {
+            margin: 0;
+            font-family: Arial,Helmet,Freesans,Helvetica;
+            
+        }
+        #topbar {
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 40px;
+            color:black;
+        }
+        
+        .fixedwidth {
+            width: 1150px;
+            margin: 0 auto;
+            
+            
+        }
+        
+        #logodiv {
+            padding-top: 7px;
+            padding-bottom: 6px;
+            float: left;
+            border-right: 1px solid #E4E4E4;
+            padding-right: 10px;
+            
+        }
+        
+        
+        
+        #singindiv {
+            font-weight: bold;
+            font-size: 0.9em;
+            padding: 4px 80px 11px 20px;
+            border-right: 1px solid #E4E4E4;
+            float: left;
+        }
+        
+        #singindiv img {
+            position: relative;
+            top: 3px;
+        }
+        
+        #topmenudiv {
+            float: left;
+            
+            
+        }
+        
+        #topmenudiv ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #topmenudiv li {
+            list-style: none;
+            padding: 10px 20px 12px 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+            border-right: 1px solid #E4E4E4;
+            height: 100%;
+            float: left;
+            
+        }
+        
+        #searchdiv {
+            float: left;
+            padding: 5px 5px 5px 10px;
+        }
+        
+        #searchdiv input {
+            height: 25px;
+            border: none;
+            background-color: #E4E4E4;
+            font-size: 0.9em;
+            padding-left: 10px;
+            font-weight: bold;
+            background-image: url(../images/magnify.PNG);
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+        
+        .break {
+            clear: both;
+            
+        }
+        
+        #newsbar {
+            background-color: #BB1919;
+            width: 100%;
+            height: 80px;
+            color: white;
+            padding-bottom: 0;
+        }
+        
+        #newsbar p {
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            float: left;
+        }
+        
+        #newsheader {
+            font-size: 3em;
+            font-weight: bold;
+            
+        }
+        
+        #uk{
+            font-size: 0.6em;
+            margin-left: 14px;
+        }
+        #rssdiv {
+            float: right;
+            margin: 50px 98px 10px 0;
+            font-weight: bold;
+        }
+        
+        #rssdiv img {
+            height: 14px;
+            padding-top: 4px;
+        }
+        
+        #downbar {
+            background-color: #A91717;
+            width: 100%;
+            height: 40px;
+            color: white;
+            margin-left: -10px;
+            padding-right: 10px;
+        }
+        
+        #topicmenu {
+
+        }
+        
+        #topicmenu ul {
+            margin: 0;
+            padding: 0;
+            padding: 10px 0 10px 0;
+        }
+        
+        #topicmenu li {
+            list-style: none;
+            float: left;
+            padding: 0 20px 0 10px;            
+            border-right: 1px solid #BB1919;
+        }
+        
+        .selected {
+            
+        }
+        
+        #content {
+            width: 100%;
+            color: black;
+            padding-bottom: 0;
+            font-size: 0.75em;
+        }
+        
+        # content a{
+            color: #1F4F82;
+            text-decoration: none;
+        }
+        
+        
+        
+        .date{
+            font-weight: bold;
+        }
+        
+        h1 {
+            padding-top: 0;
+            font-size: 2.5em;
+            
+        }
+        
+        .headlineimage {
+            float: left;
+            width: 350px;
+        }
+        
+        .newsitem {
+            position: relative;
+            margin-right:  20px;
+            width: 270px;
+            float: left;
+            top: -10px;
+            font-size: 1.3em;
+        }
+        
+        .newsitem a {
+            color: #1F4F82;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .video {
+            background-image: url(../images/triangle.PNG);
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 20px;
+        }
+          
+        .links {
+            line-height: 1.7em;
+        }
+        
+        #watchlisten {
+            background-color: #EEEEEE;
+            float: right;
+            width: 453px;
+            position: relative;
+            top: -50px;
+            padding-bottom: 0px;
+        }
+        
+        h2 {
+            color: #505050;
+            margin: 10px 0 10px 10px;
+            font-size: 1.8em;
+        }
+        
+        .boxes {
+            float: right;
+            margin: 0 0;
+            padding: 20px 10px 0 0 ;
+            
+        }
+        .leftarrow {
+            float: left;
+            border-right: 1px white solid;
+        }
+        .rightarrow {
+            float: left;
+            
+        }
+        .wlblock{
+            float: left;
+            background-color: #D1700E;
+            width: 194px;
+            border-right: 1px white solid;
+        }
+        
+        .wlblock a {
+            color: white;
+        }
+        
+        .wlblock p {
+            margin: 12px 10px 13px 10px;
+        }
+        .wlblock img {
+            
+        }
+        
+        #watchlisten ul {
+            padding-left: 15px;
+            float: left;
+            margin: 0;
+            padding: 0 10px 0 10px;
+            width: 433px;
+        }
+        
+        #watchlisten li {
+            list-style: none;
+            background-image: url(../images/live.PNG);
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding: 10px 0 10px 65px;
+            
+        }
+        .bb {
+            border-bottom: 1px solid #DDDDDD;
+            
+        }
