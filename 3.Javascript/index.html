@@ -11,8 +11,6 @@
 </head>
 
 <body>
-    
-    <input id="myInput" type="text" value="Proske"/>
    
     <button id="stylesChanger">Change the text!</button>
     
@@ -22,17 +20,11 @@
         
     <script type="text/javascript">
         
-        var divId="firstDiv";
-        var myArray = new Array();
+        var x=1;
         
-        myArray[0]="pizza";
-        myArray[1]="chocolate";
-        document.getElementById("stylesChanger").onclick=function() {
+        if (x==1) {
             
-            newText=document.getElementById("myInput").value;
-            
-            document.getElementById(divId).innerHTML=newText;
-                
+            alert("x = 1");
         }
         
         

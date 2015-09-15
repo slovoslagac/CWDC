@@ -1,0 +1,103 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+
+li {
+    list-style: none;
+}
+
+#container {
+    color: white;
+    font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+
+#header {
+    height: 203px;
+
+
+}
+
+#header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about {
+    text-align: center;
+    width: 980px;
+    margin: auto;
+    font-size: 0.91em;
+}
+
+#about h1 {
+    margin: 0;
+}
+
+#about p {
+    padding: 0;
+    margin: 15px 20px 15px 20px;
+}
+
+#repertoar {
+    width: 980px;
+    margin: auto;
+
+}
+
+
+
+#repertoar ul {
+    background-color: #B32023;
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    
+}
+
+#repertoar li {
+    float: left;
+    padding: 6px 40px 4px 40px;
+    border-right: 2px dotted;
+}
+
+#repertoar a {
+    text-decoration: none;
+    color: white
+}
+
+#narodna {
+    width: 978px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 42px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.songs {
+    width: 100%;
+}
+
+.songs th {
+    width: 25%;
+    text-align: left;
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+
+    
