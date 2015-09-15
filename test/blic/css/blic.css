@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#container {
+}
+
+#firstlinemenu {
+    width: 980px;
+    height: 24px;
+    padding: 5px;
+    background: #9D0201;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+#firstlinemenu ul {
+    float: left;
+
+}
+
+#firstlinemenu li {
+    float: left;
+    list-style: none;
+    height: 25px;
+    margin-right: 5px;
+    
+}
+
+#firstlinemenu a {
+
+}
+
+#firstlinemenu span {
+    float: left;
+    background-color: #CD0100;
+    padding-right: 7px;
+    padding-left: 7px;
+    font: bold 10px/2.4em trebuchet MS;
+}
+
+#podnaslov {
+    margin: auto;
+    width: 990px;
+    height: 110px;
+
+}
+
+#podnaslov img {
+    
+}
+
+#secondlinemenu {
+    width: 970px;
+    padding: 0 10px 0 10px;
+    background-color: #E9E9E9;
+    margin: auto;
+    height: 35px;
+    
+}
+
+#secondlinemenu ul {
+    padding-top: 5px;
+    float: left;
+}
+
+#secondlinemenu li {
+    list-style: none;
+    padding-top: 5px; 
+    float: left;
+    margin-left: 2px;
+    background-color: #F1F1F1;
+    height: 24px;
+    font: 13px/1.9em Trebuchet MS;
+}
+
+#secondlinemenu a {
+    padding-left: 10px;
+}
+
+#secondlinemenu span {
+    padding-right: 11px;
+    color: #5a5a5a;
+}

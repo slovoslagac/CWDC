@@ -6,45 +6,11 @@
     <link type="text/css" rel="stylesheet" href="css/naslovna.css" />
 </head>
 <body>
-<?php 
-$narodnaArray = [
-[ '	ATOMSKO SKLONIŠTE: ' , ' Pakleni vozaci ' ]
-[ '  ' , ' Za ljubav treba imat.. ' ]
-[ ' AZRA: ' , ' Balkan ' ]
-[ '  ' , ' A šta da radim ' ]
-[ ' ALISA: ' , ' Hej hej decace ' ]
-[ '  ' , ' Kesteni ' ]
-[ ' ANIMATORI: ' , ' Andjeli  nas zovu da.. ' ]
-[ ' BAJAGA: ' , ' Vesela pesma ' ]
-[ '  ' , ' Plavi safir ' ]
-[ '  ' , ' 20. vek ' ]
-[ '  ' , ' Moji su drugovi ' ]
-[ '  ' , ' Jer ti se ljubiš ' ]
-[ '  ' , ' Samo nam je ljubav  ' ]
-[ ' BABE: ' , ' Noc bez sna ' ]
-[ '  ' , ' Ko me tero  ' ]
-[ ' BIJELO DUGME: ' , ' Lažeš zlato… ' ]
-[ '  ' , ' Svi marš na ples ' ]
-[ '  ' , ' Ružica si bila  ' ]
-[ '  ' , ' Ne spavaj mala moja ' ]
-[ '  ' , ' Na zadnjem sjedištu ' ]
-[ '  ' , ' Napile se ulice ' ]
-[ '  ' , ' Ako ima boga ' ]
-[ '  ' , ' Ajdemo u planine ' ]
-[ ' GALIJA: ' , ' Kotor ' ]
-[ '  ' , ' Digni ruku ' ]
-[ ' GENERACIJA 5: ' , ' Dolazim za 5 minuta ' ]
-[ '  ' , ' Ti I ja ' ]
-[ ' GIBONI: ' , ' Tempera ' ]
-[ '  ' , ' Libar ' ]
-[ '  ' , ' Cinim pravu stvar ' ]
-[ '  ' , ' Zedjam ' ]
-[ ' DEJAN CUKIC: ' , ' Letnje kiše ' ]
-[ '  ' , ' Ja bih da pevam ' ]
+<?php
+$path = join(DIRECTORY_SEPARATOR, array('spisak.php'));
+include $path;
 
-];
 
-echo $narodnaArray[0][1];
 ?>
     <div id="container">
         <div id="header">
@@ -60,31 +26,46 @@ echo $narodnaArray[0][1];
         </div>
         <div id="repertoar">
             <ul>
-                <li><a href="#" rel="narodna">Domaća narodna muzika</a></li>
-                <li><a href="#" rel="zabavna">Domaća zabavna muzika</a></li>
-                <li><a href="#" rel="strana">Strana muzika</a></li>
+                <li id="narodna">Domaća narodna muzika</li>
+                <li id="zabavna">Domaća zabavna muzika</li>
+                <li id="strana">Strana muzika</li>
                 
             </ul>
         </div>
         
-        <div id="narodna" >
+        <div id="narodnaTable">
             <table class="songs">
+                <?php for($i=0;$i<=14;$i++){ ?>
                 <tr>
-                    <th>ATOMSKO SKLONIŠTE:</th>
-                    <th>Pakleni vozaci</th>
-                    <th>NEVERNE BEBE:</th>
-                    <th>Da  ima nas</th>
+                    <th><?php echo $zabavnaArray[$i][0] ?></th>
+                    <th><?php echo $zabavnaArray[$i][1] ?></th>
+                    <th><?php echo $zabavnaArray[$i+15][0] ?></th>
+                    <th><?php echo $zabavnaArray[$i+15][1] ?></th>
                 </tr>
-                
+                <?php } ?>
             </table>
         </div>
         
-        <div id="zabavna" hidden="hidden">
-            bla
+        <div id="zabavnaTable" >
+            <table class="songs">
+                <?php for($i=0;$i<=14;$i++){ ?>
+                <tr>
+                    <th><?php echo $zabavnaArray[$i][0] ?></th>
+                    <th><?php echo $zabavnaArray[$i][1] ?></th>
+                    <th><?php echo $zabavnaArray[$i+15][0] ?></th>
+                    <th><?php echo $zabavnaArray[$i+15][1] ?></th>
+                </tr>
+                <?php } ?>
+            </table>
         </div>
     
     
     
     </div>
 </body>
+    
+<script>
+    document.get
+    
+</script>
 </html>

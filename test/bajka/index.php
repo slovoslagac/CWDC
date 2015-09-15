@@ -6,43 +6,10 @@
     <link type="text/css" rel="stylesheet" href="css/naslovna.css" />
 </head>
 <body>
-<?php 
-$narodnaArray = [
-[ '	ATOMSKO SKLONIŠTE: ' , ' Pakleni vozaci ' ],
-[ '  ' , ' Za ljubav treba imat.. ' ],
-[ ' AZRA: ' , ' Balkan ' ],
-[ '  ' , ' A šta da radim ' ],
-[ ' ALISA: ' , ' Hej hej decace ' ],
-[ '  ' , ' Kesteni ' ],
-[ ' ANIMATORI: ' , ' Andjeli  nas zovu da.. ' ],
-[ ' BAJAGA: ' , ' Vesela pesma ' ],
-[ '  ' , ' Plavi safir ' ],
-[ '  ' , ' 20. vek ' ],
-[ '  ' , ' Moji su drugovi ' ],
-[ '  ' , ' Jer ti se ljubiš ' ],
-[ '  ' , ' Samo nam je ljubav  ' ],
-[ ' BABE: ' , ' Noc bez sna ' ],
-[ '  ' , ' Ko me tero  ' ],
-[ ' BIJELO DUGME: ' , ' Lažeš zlato… ' ],
-[ '  ' , ' Svi marš na ples ' ],
-[ '  ' , ' Ružica si bila  ' ],
-[ '  ' , ' Ne spavaj mala moja ' ],
-[ '  ' , ' Na zadnjem sjedištu ' ],
-[ '  ' , ' Napile se ulice ' ],
-[ '  ' , ' Ako ima boga ' ],
-[ '  ' , ' Ajdemo u planine ' ],
-[ ' GALIJA: ' , ' Kotor ' ],
-[ '  ' , ' Digni ruku ' ],
-[ ' GENERACIJA 5: ' , ' Dolazim za 5 minuta ' ],
-[ '  ' , ' Ti I ja ' ],
-[ ' GIBONI: ' , ' Tempera ' ],
-[ '  ' , ' Libar ' ],
-[ '  ' , ' Cinim pravu stvar ' ],
-[ '  ' , ' Zedjam ' ],
-[ ' DEJAN CUKIC: ' , ' Letnje kiše ' ],
-[ '  ' , ' Ja bih da pevam ' ]
+<?php
+$path = join(DIRECTORY_SEPARATOR, array('spisak.php'));
+include $path;
 
-];
 
 ?>
     <div id="container">
@@ -59,32 +26,82 @@ $narodnaArray = [
         </div>
         <div id="repertoar">
             <ul>
-                <li><a href="#" rel="narodna">Domaća narodna muzika</a></li>
-                <li><a href="#" rel="zabavna">Domaća zabavna muzika</a></li>
-                <li><a href="#" rel="strana">Strana muzika</a></li>
+                <li><a id="narodna" href="#">Domaća narodna muzika</a></li>
+                <li><a id="zabavna" href="#">Domaća zabavna muzika</a></li>
+                <li><a id="strana" href="#">Strana muzika</a></li>
                 
             </ul>
         </div>
         
-        <div id="narodna" >
+        <div id="narodnaTable" class="TableSongs">
+            <p>Muzika kojoj se rado vracamo i pevamo je. Evergreen muzika je uvek aktuelna i uvek se rado sluša. Ako je u pitanju svadba ili proslava uz ovu muziku se peva i pleše. Veseli ritam podiže raspoloženje i dovodi slušaoce na plesni podijum. Mladenci na svadbi često započinju veselje time što otplešu prvi ples uz valcer ili neku drugu veselu melodiju.</p>
+<p>Starogradska muzika budi nežna osećanja i svi je vrlo rado pevaju zajedno sa nama. </p>
             <table class="songs">
-                <?php for($i=0;$i<=14;$i++){ ?>
+                <?php $data=$narodnaArray;$j=halfarray($data); $leng=count($data); for($i=0;$i<$j;$i++){ ?>
                 <tr>
-                    <th><?php echo $narodnaArray[$i][0] ?></th>
-                    <th><?php echo $narodnaArray[$i][1] ?></th>
-                    <th><?php echo $narodnaArray[$i+15][0] ?></th>
-                    <th><?php echo $narodnaArray[$i+15][1] ?></th>
+                    <th><?php echo $data[$i][0] ?></th>
+                    <th><?php echo $data[$i][1] ?></th>
+                    <th><?php echo ($i+$j < $leng) ? $data[$i+$j][0] : ""; ?></th>
+                    <th><?php echo ($i+$j < $leng) ? $data[$i+$j][1] : ""; ?></th>
                 </tr>
                 <?php } ?>
             </table>
         </div>
         
-        <div id="zabavna" hidden="hidden">
-            bla
+        <div id="zabavnaTable" class="TableSongs" style="display: none;">
+            <table class="songs">
+                <?php $data=$zabavnaArray;$j=halfarray($data); $leng=count($data); for($i=0;$i<$j;$i++){ ?>
+                <tr>
+                    <th><?php echo $data[$i][0] ?></th>
+                    <th><?php echo $data[$i][1] ?></th>
+                    <th><?php echo ($i+$j < $leng) ? $data[$i+$j][0] : ""; ?></th>
+                    <th><?php echo ($i+$j < $leng) ? $data[$i+$j][1] : ""; ?></th>
+                </tr>
+                <?php } ?>
+            </table>
+        </div>
+        
+        <div id="stranaTable" class="TableSongs" style="display: none;">
+            <table class="songs">
+                <?php $data=$stranaArray;$j=halfarray($data); $leng=count($data); for($i=0;$i<$j;$i++){ ?>
+                <tr>
+                    <th><?php echo $data[$i][0] ?></th>
+                    <th><?php echo $data[$i][1] ?></th>
+                    <th><?php echo ($i+$j < $leng) ? $data[$i+$j][0] : ""; ?></th>
+                    <th><?php echo ($i+$j < $leng) ? $data[$i+$j][1] : ""; ?></th>
+                </tr>
+                <?php } ?>
+            </table>
         </div>
     
     
     
     </div>
 </body>
+    
+<script>
+    document.getElementById("narodna").onclick=function() {
+
+        document.getElementById("zabavnaTable").style.display="none";
+        document.getElementById("narodnaTable").style.display="";
+        document.getElementById("stranaTable").style.display="none";
+        
+    };
+    
+    document.getElementById("zabavna").onclick=function() {
+
+        document.getElementById("zabavnaTable").style.display="";
+        document.getElementById("narodnaTable").style.display="none";
+        document.getElementById("stranaTable").style.display="none";
+        
+    };
+    
+    document.getElementById("strana").onclick=function() {
+
+        document.getElementById("zabavnaTable").style.display="none";
+        document.getElementById("narodnaTable").style.display="none";
+        document.getElementById("stranaTable").style.display="";
+        
+    }
+</script>
 </html>
