@@ -12,25 +12,25 @@
 
 <body>
    
-    <button id="stylesChanger">Change the text!</button>
-    
-    <div id="firstDiv">This is some text</div>
+    <p id="arrayString"></p>
     
     
         
     <script type="text/javascript">
+    
+    var arrayString= [];
+    var myArray = ["pizza","chocolate","chips"];
         
-        var x=1;
-        
-        if (x==1) {
-            
-            alert("x = 1");
+        for (var i=0; i<myArray.length; i++) {
+            arrayString=arrayString+myArray[i]+", ";
         }
-        
-        
+    console.log(arrayString);
+    
+        document.getElementById("arrayString").innerHTML=arrayString;
+    
     </script>
    
-   
+    
     
 </body>
 </html>
